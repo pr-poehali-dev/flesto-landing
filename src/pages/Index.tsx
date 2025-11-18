@@ -72,11 +72,11 @@ export default function Index() {
       <section className="relative h-screen flex items-center justify-center mt-16">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" 
-            alt="Hero" 
+            src="https://cdn.poehali.dev/projects/e2c5c74d-e56d-4eb6-9699-b5497a9e36e2/files/1be21495-a72e-4ff1-8dbb-aad7a4e6d138.jpg" 
+            alt="Дом с фасадными термопанелями Flesto" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
         <div className="container mx-auto px-4 z-10 text-center text-white animate-fade-in">
