@@ -80,11 +80,11 @@ export default function Index() {
         </div>
         
         <div className="container mx-auto px-4 z-10 text-center text-white animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Фасадные термопанели<br />под кирпич
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Утепление и отделка фасада дома<br />термопанелями Flesto под ключ
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Утепление и отделка 2 в 1 • Производство и монтаж в Рязани и области
+          <p className="text-xl md:text-3xl mb-8 text-gray-200 font-semibold">
+            Цена как у сайдинга — внешний вид как у кирпичной облицовки
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="bg-[#D2691E] hover:bg-[#C25810] text-lg px-8">
