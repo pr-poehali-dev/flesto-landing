@@ -253,16 +253,36 @@ export default function Index() {
           <div className="max-w-6xl mx-auto mb-12">
             <h3 className="text-2xl font-bold mb-6">Цвета панелей</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-              {colors.map((color, idx) => (
-                <div key={idx} className="text-center">
-                  <div className="w-full aspect-square rounded-lg mb-2 shadow-md transition-transform hover:scale-105" 
-                       style={{
-                         background: `hsl(${idx * 25}, ${40 + idx * 2}%, ${30 + idx * 3}%)`
-                       }}
-                  />
-                  <p className="text-sm">{color}</p>
-                </div>
-              ))}
+              {colors.map((color, idx) => {
+                const colorMap: Record<number, string> = {
+                  0: '#F5E6C8',
+                  1: '#E8C068',
+                  2: '#FFD700',
+                  3: '#FFDAB9',
+                  4: '#D2691E',
+                  5: '#FF7F50',
+                  6: '#C04000',
+                  7: '#8B0000',
+                  8: '#B0C4DE',
+                  9: '#4A4A4A',
+                  10: '#F8F8FF',
+                  11: '#D4B896',
+                  12: '#A67B5B',
+                  13: '#3B2414'
+                };
+                
+                return (
+                  <div key={idx} className="text-center">
+                    <div className="w-full aspect-square rounded-lg mb-2 shadow-md transition-transform hover:scale-105" 
+                         style={{
+                           background: colorMap[idx],
+                           border: idx === 10 ? '1px solid #e5e5e5' : 'none'
+                         }}
+                    />
+                    <p className="text-sm">{color}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
